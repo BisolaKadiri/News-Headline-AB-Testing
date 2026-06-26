@@ -111,15 +111,15 @@ Applied **Welch's t-test** (chosen for unequal group sizes) to compare mean head
 ## 🖼️ Visualisations
 
 ### Headline Length Distribution by Group
-![Headline Length Boxplot](./images/headline_length_boxplot.png)
+![Headline Length Boxplot](./images/ab1.png)
 > Group A (Morning) shows a higher median and mean headline length compared to Group B (Evening), with some overlap in the interquartile range.
 
 ### Average Publication Hour by Group
-![Average Publication Hour](./images/avg_publication_hour.png)
+![Average Publication Hour](./images/ab2.png)
 > Group A articles cluster around 10AM on average, while Group B articles average around 8PM — confirming clean separation between the two test windows.
 
 ### Headline Length Histogram — Group A vs Group B
-![Headline Length Histogram](./images/headline_length_histogram.png)
+![Headline Length Histogram](./images/ab3.png)
 > Both distributions are roughly normal. Group A's distribution is shifted right, indicating consistently longer headlines across the morning publishing window.
 
 
