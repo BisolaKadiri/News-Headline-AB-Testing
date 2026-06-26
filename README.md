@@ -59,12 +59,13 @@ The dataset was collected directly from NewsAPI, a REST API providing access to 
 These engineered variables formed the foundation for the A/B testing analysis.
 
 3. A/B Test Design
+
 To simulate an experimental setting, articles were divided into two independent groups based on publication time.
 
 | Group | Publishing Window | Articles | Share |
 |---|---|---|---|
-| **Group A** — Morning | 6AM – 12PM | 401 | 54.9% |
-| **Group B** — Evening | 6PM – 12AM | 329 | 45.1% |
+| **Group A** - Morning | 6AM - 12PM | 401 | 54.9% |
+| **Group B** - Evening | 6PM - 12AM | 329 | 45.1% |
 
 Articles published outside these windows were intentionally excluded to maintain clearly defined comparison groups and reduce overlap between experimental conditions. This design enables the investigation of whether editorial practices differ between morning and evening publication periods.
 
@@ -74,11 +75,11 @@ Before statistical analysis, the dataset underwent several preprocessing steps t
 
 | Issue | Action Taken |
 |---|---|
-| `sourceId` — 686 missing | Dropped (not needed for analysis) |
-| `author` — 152 missing | Filled with `'Unknown'` |
-| `description` — 30 missing | Filled with `'None'` |
-| `urlToImage` — 37 missing | Dropped (not relevant) |
-| `group` — null (outside windows) | Rows removed |
+| `sourceId` - 686 missing | Dropped (not needed for analysis) |
+| `author` - 152 missing | Filled with `'Unknown'` |
+| `description` - 30 missing | Filled with `'None'` |
+| `urlToImage` - 37 missing | Dropped (not relevant) |
+| `group` - null (outside windows) | Rows removed |
 | **Final clean dataset** | **730 articles** |
 
 5.Sample Size Validation
@@ -125,7 +126,7 @@ Applied **Welch's t-test** (chosen for unequal group sizes) to compare mean head
 ## 💡 Business Recommendations
 
 **1. Lean into morning publishing for detailed, informative headlines**
-Morning articles averaged 9% longer headlines. This likely reflects structured editorial planning — recapping overnight news with more deliberate headline writing. Platforms optimising for SEO and depth should prioritise morning slots.
+Morning articles averaged 9% longer headlines. This likely reflects structured editorial planning, recapping overnight news with more deliberate headline writing. Platforms optimising for SEO and depth should prioritise morning slots.
 
 **2. Standardise evening headline strategy**
 Evening articles showed higher variation in both headline length and source distribution. A style guide for evening publishing could bring consistency and improve audience expectations.
@@ -134,11 +135,9 @@ Evening articles showed higher variation in both headline length and source dist
 Headline length was used as a proxy for engagement in this analysis. The logical next step is to run A/B tests on actual click-through rates or read-time data to establish direct causal impact.
 
 **4. Acknowledge data limitations**
-- NewsAPI free tier truncates article content — word counts may not reflect full articles
+- NewsAPI free tier truncates article content, word counts may not reflect full articles
 - No direct engagement metrics (clicks, shares) were available
 - Articles outside the 6AM–12PM and 6PM–12AM windows were excluded, removing 39% of the dataset
-
----
 
 ## 🛠️ Tools & Libraries
 
