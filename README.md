@@ -1,5 +1,7 @@
 # News-Headline-AB-Testing
 
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1ATaKfpsCzlugLxqXlEglWNNFQltXre4T#scrollTo=7dd6859e)
+
 ## Which Headline Works Better? A/B Testing with Real API Data
 _A data analytics project that leverages real-world news data to simulate an A/B experiment, evaluate publication timing strategies, and apply statistical hypothesis testing to uncover meaningful differences in headline characteristics._
 
